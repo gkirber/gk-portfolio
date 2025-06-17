@@ -5,6 +5,7 @@ import './globals.css'
 // components
 import MainNav from '@/components/MainNav'
 import PageTransition from '@/components/PageTransition'
+import RectanglesTransition from '@/components/RectanglesTransition'
 
 const sometypeMono = Sometype_Mono({
 	variable: '--font-sometype-mono',
@@ -24,6 +25,7 @@ const RootLayout: React.FC<RootLayoutProps> = ({ children }) => {
 	return (
 		<html lang='en'>
 			<body className={`${sometypeMono.variable} antialiased`}>
+				<RectanglesTransition />
 				<PageTransition>
 					<div className='flex'>
 						{/* main nav */}
