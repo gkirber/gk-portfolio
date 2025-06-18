@@ -9,6 +9,53 @@ export interface NavLinksProps {
 	containerStyles: string
 }
 
+// Socials component types
+export interface SocialsProps {
+	containerStyles: string
+	iconStyles: string
+}
+
+// Blob component types
+export interface BlobProps {
+	containerStyles: string
+}
+
+// Logo component types (може бути розширено в майбутньому)
+export interface LogoProps {
+	className?: string
+}
+
+// Header component types (може бути розширено в майбутньому)
+export interface HeaderProps {
+	className?: string
+}
+
+// Pattern component types
+export interface PatternProps {
+	className?: string
+}
+
+// Gradient component types
+export interface GradientProps {
+	className?: string
+}
+
+// Rectangle component types
+export interface RectangleProps {
+	className?: string
+}
+
+// RectanglesTransition component types
+export interface RectanglesTransitionProps {
+	className?: string
+}
+
+// PageTransition component types
+export interface PageTransitionProps {
+	children: React.ReactNode
+	className?: string
+}
+
 // Event handler types
 export interface EventHandlers {
 	handleClick?: (event: React.MouseEvent<HTMLElement>) => void
@@ -64,6 +111,39 @@ export interface AnimationProps {
 	animate?: object
 	exit?: object
 	transition?: object
+}
+
+// Theme types
+export interface Theme {
+	mode: 'light' | 'dark'
+	primary: string
+	secondary: string
+	accent: string
+	background: string
+	text: string
+}
+
+// SEO types
+export interface SEOProps {
+	title: string
+	description: string
+	keywords?: string[]
+	ogImage?: string
+	canonical?: string
+}
+
+// Loading states
+export interface LoadingState {
+	isLoading: boolean
+	error?: string | null
+}
+
+// API Response types
+export interface ApiResponse<T> {
+	data: T
+	success: boolean
+	message?: string
+	error?: string
 }
 
 // Utility types

@@ -1,39 +1,17 @@
 'use client'
 
-import { NavLink, NavLinksProps } from '@/types'
+import { NavLinksProps } from '@/types'
+import { NAV_LINKS } from '@/lib/constants'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import React from 'react'
-
-const links: NavLink[] = [
-	{
-		name: 'home',
-		path: '/',
-	},
-	{
-		name: 'about',
-		path: '/about',
-	},
-	{
-		name: 'services',
-		path: '/services',
-	},
-	{
-		name: 'work',
-		path: '/work',
-	},
-	{
-		name: 'contact',
-		path: '/contact',
-	},
-]
 
 const NavLinks: React.FC<NavLinksProps> = ({ containerStyles }) => {
 	const pathname = usePathname()
 
 	return (
 		<ul className={containerStyles}>
-			{links.map((link, index) => {
+			{NAV_LINKS.map((link, index) => {
 				// determine if the current link matches the active route
 				const isActive = pathname === link.path
 				// calculate the number of characters in the link name

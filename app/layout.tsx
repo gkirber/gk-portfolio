@@ -6,6 +6,8 @@ import './globals.css'
 import MainNav from '@/components/MainNav'
 import PageTransition from '@/components/PageTransition'
 import RectanglesTransition from '@/components/RectanglesTransition'
+import Gradient from '@/components/Gradient'
+import Header from '@/components/Header'
 
 const sometypeMono = Sometype_Mono({
 	variable: '--font-sometype-mono',
@@ -24,7 +26,10 @@ interface RootLayoutProps {
 const RootLayout: React.FC<RootLayoutProps> = ({ children }) => {
 	return (
 		<html lang='en'>
-			<body className={`${sometypeMono.variable} antialiased`}>
+			<body
+				className={`${sometypeMono.variable} antialiased overflow-hidden relative`}
+			>
+				<Gradient />
 				<RectanglesTransition />
 				<PageTransition>
 					<div className='flex'>
@@ -32,8 +37,8 @@ const RootLayout: React.FC<RootLayoutProps> = ({ children }) => {
 						<div className='hidden 2xl:flex w-[285px] h-screen bg-secondary'>
 							<MainNav />
 						</div>
-						<div className='w-full max-w-[1130px] px-[15px] mx-auto bg-pink-50/10'>
-							<header>header</header>
+						<div className='w-full max-w-[1130px] px-[15px] mx-auto'>
+							<Header />
 							<div>{children}</div>
 						</div>
 					</div>
