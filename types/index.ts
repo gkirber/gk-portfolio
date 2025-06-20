@@ -191,3 +191,60 @@ export interface FormProps {
 	submitText?: string
 	className?: string
 }
+
+// Skills component types
+export interface Skill {
+	icon: React.ReactNode
+	name: string
+}
+
+export interface SkillsProps {
+	className?: string
+}
+
+// Stats component types
+export interface Stat {
+	value: number
+	label: string
+	suffix?: string
+}
+
+export interface StatsProps {
+	className?: string
+}
+
+// Journey/Experience types
+export interface JourneyItem {
+	years: string
+	role: string
+	institution: string
+}
+
+export interface JourneyProps {
+	className?: string
+}
+
+// Testimonial types
+export interface TestimonialItem {
+	message: string
+	name: string
+}
+
+export interface TestimonialProps {
+	className?: string
+}
+
+// Social links types
+export interface SocialLink {
+	icon: string
+	path: string
+	label: string
+}
+
+// CountUp component props
+export interface CountUpProps {
+	end: number
+	duration?: number
+	delay?: number
+	className?: string
+}

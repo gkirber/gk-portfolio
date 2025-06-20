@@ -1,4 +1,12 @@
-import { NavLink, Service, Work } from '@/types'
+import {
+	AnimationProps,
+	ContactInfo,
+	NavLink,
+	PageMetadata,
+	Service,
+	SocialLink,
+	Work,
+} from '@/types'
 
 // Navigation links
 export const NAV_LINKS: NavLink[] = [
@@ -25,7 +33,7 @@ export const NAV_LINKS: NavLink[] = [
 ]
 
 // Social media links
-export const SOCIAL_LINKS = [
+export const SOCIAL_LINKS: SocialLink[] = [
 	{
 		icon: 'instagram',
 		path: 'https://www.instagram.com/iurii_rebryk/',
@@ -44,10 +52,14 @@ export const SOCIAL_LINKS = [
 ]
 
 // Contact information
-export const CONTACT_INFO = {
+export const CONTACT_INFO: ContactInfo = {
 	email: 'george.kirber@gmail.com',
 	phone: '+48 518 370 768',
 	location: 'Poland',
+	social: {
+		linkedin: 'https://www.linkedin.com/in/iurii-rebryk',
+		github: 'https://github.com/gkirber',
+	},
 }
 
 // Services data
@@ -55,21 +67,29 @@ export const SERVICES: Service[] = [
 	{
 		id: 'frontend',
 		title: 'Frontend Development',
-		description: 'Modern, responsive web applications using React, Next.js, and TypeScript',
+		description:
+			'Modern, responsive web applications using React, Next.js, and TypeScript',
 		icon: '/assets/services/frontend.svg',
-		features: ['React/Next.js', 'TypeScript', 'TailwindCSS', 'Responsive Design'],
+		features: [
+			'React/Next.js',
+			'TypeScript',
+			'TailwindCSS',
+			'Responsive Design',
+		],
 	},
 	{
 		id: 'backend',
 		title: 'Backend Development',
-		description: 'Robust server-side solutions with Node.js and modern databases',
+		description:
+			'Robust server-side solutions with Node.js and modern databases',
 		icon: '/assets/services/backend.svg',
 		features: ['Node.js', 'Express', 'MongoDB', 'PostgreSQL'],
 	},
 	{
 		id: 'design',
 		title: 'UI/UX Design',
-		description: 'Beautiful and intuitive user interfaces with modern design principles',
+		description:
+			'Beautiful and intuitive user interfaces with modern design principles',
 		icon: '/assets/services/design.svg',
 		features: ['Figma', 'Adobe XD', 'Prototyping', 'User Research'],
 	},
@@ -78,14 +98,24 @@ export const SERVICES: Service[] = [
 		title: 'SEO Optimization',
 		description: 'Improve your website visibility and search engine rankings',
 		icon: '/assets/services/seo.svg',
-		features: ['Technical SEO', 'Content Optimization', 'Analytics', 'Performance'],
+		features: [
+			'Technical SEO',
+			'Content Optimization',
+			'Analytics',
+			'Performance',
+		],
 	},
 	{
 		id: 'video',
 		title: 'Video Production',
 		description: 'Professional video content for marketing and branding',
 		icon: '/assets/services/video.svg',
-		features: ['Video Editing', 'Motion Graphics', 'Color Grading', 'Sound Design'],
+		features: [
+			'Video Editing',
+			'Motion Graphics',
+			'Color Grading',
+			'Sound Design',
+		],
 	},
 ]
 
@@ -139,37 +169,48 @@ export const WORK_PROJECTS: Work[] = [
 ]
 
 // Animation variants
-export const ANIMATION_VARIANTS = {
-	hidden: { opacity: 0, y: 20 },
-	visible: { opacity: 1, y: 0 },
-	exit: { opacity: 0, y: -20 },
+export const ANIMATION_VARIANTS: Record<string, AnimationProps> = {
+	hidden: { initial: { opacity: 0, y: 20 } },
+	visible: { animate: { opacity: 1, y: 0 } },
+	exit: { exit: { opacity: 0, y: -20 } },
 }
 
 // Page metadata
-export const PAGE_METADATA = {
+export const PAGE_METADATA: Record<string, PageMetadata> = {
 	home: {
 		title: 'Iurii Rebryk - Web Developer & Designer',
-		description: 'Professional web developer and designer creating modern, user-friendly websites and applications.',
-		keywords: ['web developer', 'web designer', 'React', 'Next.js', 'TypeScript'],
+		description:
+			'Professional web developer and designer creating modern, user-friendly websites and applications.',
+		keywords: [
+			'web developer',
+			'web designer',
+			'React',
+			'Next.js',
+			'TypeScript',
+		],
 	},
 	about: {
 		title: 'About - Iurii Rebryk',
-		description: 'Learn more about Iurii Rebryk, a passionate web developer and designer.',
+		description:
+			'Learn more about Iurii Rebryk, a passionate web developer and designer.',
 		keywords: ['about', 'experience', 'skills', 'web development'],
 	},
 	services: {
 		title: 'Services - Iurii Rebryk',
-		description: 'Comprehensive web development and design services including frontend, backend, and UI/UX design.',
+		description:
+			'Comprehensive web development and design services including frontend, backend, and UI/UX design.',
 		keywords: ['services', 'web development', 'design', 'frontend', 'backend'],
 	},
 	work: {
 		title: 'Work - Iurii Rebryk',
-		description: 'Portfolio of web development and design projects showcasing modern solutions.',
+		description:
+			'Portfolio of web development and design projects showcasing modern solutions.',
 		keywords: ['portfolio', 'projects', 'work', 'web development'],
 	},
 	contact: {
 		title: 'Contact - Iurii Rebryk',
-		description: 'Get in touch with Iurii Rebryk for your next web development or design project.',
+		description:
+			'Get in touch with Iurii Rebryk for your next web development or design project.',
 		keywords: ['contact', 'hire', 'web developer', 'web designer'],
 	},
-} 
+}
