@@ -113,10 +113,8 @@ The project is fully responsive and optimized for:
 
 This project is distributed under the MIT License. See the `LICENSE` file for details.
 
-## 📞 Contact
+## 📨 Contact
 
-- **Phone:** +48 518 370 768
-- **Email:** george.kirber@gmail.com
 - **LinkedIn:** [https://www.linkedin.com/in/iurii-rebryk]
 - **GitHub:** [https://github.com/gkirber]
 
