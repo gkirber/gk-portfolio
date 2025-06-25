@@ -58,12 +58,12 @@ const projects = [
   {
     id: 5,
     category: "uiux",
-    title: "FlowMobile App Design",
-    description: "Mobile-first Figma design",
+    title: "Velo-city",
+    description: "Bicycle Shop – Bikes, Parts & Accessories. Built with HTML & CSS",
     image: "/assets/work/thumb1.png",
-    link: "",
-    github: "",
-    tech: ["Figma", "Adobe XD"],
+    link: "https://velocity-orpin-one.vercel.app/",
+    github: "https://github.com/gkirber/velocity",
+    tech: ["HTML", "CSS", "JavaScript"],
   },
   {
     id: 6,
