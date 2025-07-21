@@ -77,23 +77,23 @@ const projects = [
   },
   {
     id: 7,
-    category: "branding",
-    title: "Brewhaus Brand Identity",
-    description: "A bold and earthy visual identity for a modern coffee brand",
-    image: "/assets/work/thumb3.png",
-    link: "",
-    github: "",
-    tech: ["Illustrator", "Photoshop", "Figma"],
+    category: "other",
+    title: "TODO App",
+    description: "A modern, responsive TODO application with real-time authentication and task management features. Built with vanilla JavaScript and Firebase.",
+    image: "/assets/work/todo-app.png",
+    link: "https://todo-wg.vercel.app/",
+    github: "https://github.com/gkirber/todo-wg",
+    tech: ["JavaScript", "HTML", "CSS", "Firebase"],
   },
   {
     id: 8,
-    category: "branding",
-    title: "LunaSkin Luxury Branding",
-    description: "Elegant branding for a premium skincare product line",
-    image: "/assets/work/thumb4.png",
-    link: "",
-    github: "",
-    tech: ["Photoshop", "Figma", "Canva"],
+    category: "other",
+    title: "Web-Meteo",
+    description: "Web Meteo is a modern weather web application that allows you to view current weather, hourly, and 5-day forecasts for any city or your current geolocation. The app features a light/dark theme switcher, a user-friendly interface, and recent city search history.",
+    image: "/assets/work/web-meteo.png",
+    link: "https://gkirber.github.io/web-meteo/",
+    github: "https://github.com/gkirber/web-meteo",
+    tech: ["JavaScript", "HTML", "CSS", "OpenWeatherMap API"],
   },
   {
     id: 9,
@@ -108,7 +108,7 @@ const projects = [
   },
 ];
 
-const categories = ["frontend", "fullstack", "uiux", "branding"];
+const categories = ["frontend", "fullstack", "uiux", "other"];
 
 const Work = () => {
   return (
