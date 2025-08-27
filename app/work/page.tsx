@@ -28,12 +28,12 @@ const projects = [
   {
     id: 2,
     category: "frontend",
-    title: "Nextfolio Portfolio Site",
-    description: "Next.js portfolio site",
-    image: "/assets/work/thumb2.png",
-    link: "",
-    github: "",
-    tech: ["Next.js", "Tailwind CSS", "Shadcn UI"],
+    title: "My Todo App",
+    description: "TODO app using Tailwind CSS",
+    image: "/assets/work/todo-app.png",
+    link: "https://td-rtw.vercel.app/",
+    github: "https://github.com/gkirber/td-rtw",
+    tech: ["React", "Tailwind CSS", "Vite"],
   },
   {
     id: 3,
