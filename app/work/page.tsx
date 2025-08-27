@@ -30,7 +30,7 @@ const projects = [
     category: "frontend",
     title: "My Todo App",
     description: "TODO app using Tailwind CSS",
-    image: "/assets/work/todo-app.png",
+    image: "/assets/work/todo-tw.png",
     link: "https://td-rtw.vercel.app/",
     github: "https://github.com/gkirber/td-rtw",
     tech: ["React", "Tailwind CSS", "Vite"],
